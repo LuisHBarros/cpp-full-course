@@ -4,3 +4,48 @@ https://www.youtube.com/watch?v=-TkoO8Z07hI
 
 Expectations:
     I hope to learn more about algorithms, understand middle-level development and be able to create projects with c++ technology
+
+Annotations:
+    namespace:
+        Provides a solution for preventing name conflicts in large projects. Each entity needs a unique name.
+        A namespace allows for identically named entities as long as the namespace are different.
+
+
+Typedef : 
+    reserved keyword used to create an additional name for another data type.
+    New identifier for an existing type 
+    Helps with readability and reduces typos
+    Can be replaced with 'using' (work better with templates)
+
+Input and Output:
+    Use cin to get user's input (only one word)
+    if it has more than one word, use std::getline()
+    A example for using the getline function correctly:
+        std::getline(std::cin >> std::ws, {variable});
+    For output, use std::cout like: 
+        std::cout <<"Hello"<<"/n"
+    
+Cmath -> https://cplusplus.com/reference/cmath/
+
+Ternary operator: condition ? expression_for_truth : expression_for_false;
+
+Useful string methods: 
+    string.length() - length of a string;
+    string.empty() - return if the string is empty;
+    string.clear() - clear an string;
+    string.append(element) - add a element at the end of the string;
+    string.at(index) - return the element in the index position on the string;
+    string.insert(index, element) - put a new element in the index position
+        without taking off the anterior element;
+    string.find(element) - return the index of the first element founded in the 
+        search;
+    string.erase(startIndex, endIndex) - removes all elements between startIndex 
+        and endIndex 
+
+break: break out of a loop;
+continue: skip current iteration;
+random number generation: use{
+    srand(time(NULL));
+    
+    rand() % x + 1;
+} -> generates a number between 1 and x;
