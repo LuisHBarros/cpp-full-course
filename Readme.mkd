@@ -1,0 +1,6 @@
+Repository of the "C++ Full Course for free⚡️", of "Bro Code" channel in YouTube
+
+https://www.youtube.com/watch?v=-TkoO8Z07hI
+
+Expectations:
+    I hope to learn more about algorithms, understand middle-level development and be able to create projects with c++ technology
