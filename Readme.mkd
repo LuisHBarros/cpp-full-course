@@ -49,3 +49,56 @@ random number generation: use{
     
     rand() % x + 1;
 } -> generates a number between 1 and x;
+
+Arrays can only contain values of the same type, like int, or string:
+    int array[] = {"one", 2, "tree"}; <- You can't do this.
+    int array[] = {0,1,2}; <- But, you can do this.
+
+Array is a static data structure, and because of this, you need to provide the size of an array, or put all the data inside the declaration, like:
+    int array[5];
+    int array[] = {0, 1, 2, 3, 4};
+You can't do this:
+    int array[2];
+    array[2] = 4; <- the index 2 is outside of the array size.
+
+
+To get the size (in bytes) of an array, variable, data type, class, objects, etc, use:
+    sizeof(x);
+    **To get the total index of an array, do:
+        sizeof(array)/sizeof(typeOfArray);
+
+For each loop:
+    Like in Python and Java, the 'foreach loop' is used to iterate over the elements of a containers (array, vectors etc) quickly without performing initialization, testing and increment/decrement, like:
+        int numbers[] = {0, 1, 2, 3, 4};
+        for(int number : numbers){}
+
+fill() -> Fills a range of elements with a specified value, like:
+    fill(begin, end, value);
+
+toupper() -> Makes a lowercase character become an uppercase one:
+    toupper('a'): to be 'A'
+
+Pass by value: Create a copy of the argument, without modify the original value.
+    In other words, the compiler creates new variables, with different addresses;
+    It's the most common ways to use the variables;
+Pass by reference: Don't create copies, the variable can be modify.
+    For use this, put on '&' before the variable name, like:
+        double square(double &x);
+
+Pointers -> Variable that stores a memory address of another variable.      
+    Sometimes it's easier to work with an address.
+    & = address-of operator;
+    * = dereference operator;
+    nullptr: keyword represents a null pointer literal. Nullptrs are helpful when determining if an address was successfully assigned to a pointer.
+
+Dynamic memory -> Memory that is allocated after the program is already compiled
+    and running. Use the 'new' operator to allocate memory in the heap rather than the stack.
+    Useful when we don't know how much memory we will need. Makes our programs more flexible, especially when accepting user input.
+        PAY ATTENTION: When we use 'new', it's good practice to use 'delete' when   
+            the variable is no longer needed;
+
+Recursion -> It's a programming technique where a function invokes itself from
+    within break a complex concept into a repeatable single step;
+    advantages: less code and is cleaner, useful for sorting and searching
+        algorithms;
+    disadvantages: uses more memory and it's slower;
