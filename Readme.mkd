@@ -20,7 +20,7 @@ Typedef :
 Input and Output:
     Use cin to get user's input (only one word)
     if it has more than one word, use std::getline()
-    A example for using the getline function correctly:
+    Ex.
         std::getline(std::cin >> std::ws, {variable});
     For output, use std::cout like: 
         std::cout <<"Hello"<<"/n"
@@ -102,3 +102,36 @@ Recursion -> It's a programming technique where a function invokes itself from
     advantages: less code and is cleaner, useful for sorting and searching
         algorithms;
     disadvantages: uses more memory and it's slower;
+
+Function template = describes what a function looks like.
+    Can be used to generate as many overload function as needed,
+    each one using different data types.
+
+struct -> A structure that group related variables under one name
+    structs can contain many different data types (string, int, double, etc)
+    variables in a struct are know as "members"
+    members can be access with . "Class Member Access Operation
+
+Enums -> a user-defined data type that consists of paired name-integer constants.
+    Great if you gabe a set of potencial options;
+
+____________________________________________________________________________________
+                            Object Oriented Programming                             
+
+object -> A collection of attributes and methods;
+    They can have characteristics and could perform actions;
+    Can be used to mimic real world items (ex. Phone, Book, Dog);
+    Created from a class which acts as a "blue-print";
+
+constructor -> special method that is automatically called when an object is 
+    instantiated;
+    useful for assigning value to attributes as arguments;
+
+Abstraction -> hiding unnecessary data from outside a class;
+Getter -> function that makes a private attribute Readable;
+Setter -> function that makes a private attribute Writable;
+
+Inheritance -> A class can receive attributes and methods form another class;
+    Children classed inherit from a Parent class;
+    Helps to reuse similar code found within multiple classes;
+    Ex. class Dog: public Animal{};
